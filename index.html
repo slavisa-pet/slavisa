@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MultiGfit Landing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="text/css" href="assets/css/multi.css" rel="stylesheet">
+    <style type="text/css">
+      .billboard{
+            background-image: url("http://d2k2s6h05979sn.cloudfront.net/40e00bbc-327a-45ea-82bd-c1bdc0ea778f");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper" data-overlay="">
+      <div class="billboard">
+      <div class="billboard-overlay"></div>
+        <div class="content">
+          <div class="brand-msg">
+            <img class="logo" src="http://d2k2s6h05979sn.cloudfront.net/655fd627-7a2e-48b7-9ae5-e5b2a100f5ae" data-brand-logo />
+          <p class="copyright copyright-top">
+            Powered by <a target="new" href="http://www.giftconnect.co/">GiftConnect</a><br><a target="new" href="">Terms & Conditions</a>
+          </p>
+            <div class="promo" id="promo">
+	            <h1 data-promo-title>Free $5 Gift to Reebok Classic <span>second line placeholder</span></h1>
+	            <div class="email-component">
+	              <!--<form>-->
+	                <input type="email" id="email" name="email" autocomplete="off" placeholder="Enter your email here">
+	                <button id="take-gift" data-gift-button="" onclick="congrats()">Get <span>this</span> gift</button>
+	                <span id="error-msg" class="error error-active">Please enter valid email address</span>
+	                <!--Add or remove class: error-active @#error-msg to show or hide validation message error box -->
+	              <!--</form>-->
+	            </div>
+	            <p data-promo-description>
+	              Select any of the gifts bellow and they are yours !
+	            </p>
+            </div>
+
+
+            <div class="congrats" id="congrats">
+              <h2 data-promo-title>Congratulations ! <span>Your gift code is:</span></h2>
+              <div class="redeem-code">GitanGOO</div>
+              <a class="redeem-button" onclick="promo()">Click to Redeem</a>
+            </div>
+
+
+
+            <div class="push"></div>
+          </div>
+        </div>
+      </div>
+      <div class="gift-blocks-outer" id="bottomArea">
+        <div class="content">
+          <div class="gift-block"><a href="">
+            <div class="msg-wrapper">
+              <h2 class="gift-name" data-gift-name="">$10 off any Uber<br>Eats delivery</h2>
+            </div>
+            <div class="gift-img-wrapper">
+            <img class="mobile-gift-img" data-gift-image-mobile="" src="assets/img/gift-img-1.jpg">
+            <div class="overlay"></div>
+                </div>
+                </a>
+          </div>
+          <div class="gift-block"><a href="">
+            <div class="msg-wrapper">
+              <h2 class="gift-name" data-gift-name="">Free $10 gift to<br>Under Armour</h2>
+            </div>
+            <div class="gift-img-wrapper">
+            <img class="mobile-gift-img" data-gift-image-mobile="" src="assets/img/gift-img-2.jpg">
+            <div class="overlay"></div>
+                </div>
+                </a>
+          </div>
+          <div class="gift-block gb-active"><a href="">
+            <div class="msg-wrapper">
+              <h2 class="gift-name" data-gift-name="">$15 Xbox Live!<br>membership</h2>
+            </div>
+            <div class="gift-img-wrapper">
+            <img class="mobile-gift-img" data-gift-image-mobile="" src="assets/img/gift-img-3.jpg">
+            <div class="overlay"></div>
+            </div>
+            </a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="copyright-outer">
+        <div class="content">
+          <p class="copyright">
+            Powered by <a target="new" href="http://www.giftconnect.co/">GiftConnect</a><br><a target="new" href="">Terms & Conditions</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+  /* TESTING */
+  function congrats() {
+    var promo = document.getElementById("promo");
+    var congrats = document.getElementById("congrats");
+    promo.style.display = "none";
+    congrats.style.display = "block";
+  }
+  function promo() {
+    var promo = document.getElementById("promo");
+    var congrats = document.getElementById("congrats");
+    promo.style.display = "block";
+    congrats.style.display = "none";
+  }
+/*
+//alert('res: ' + screen.width + 'x' + screen.height);
+var emailFld = document.getElementById("email");
+emailFld.addEventListener("focus", removeFixedCSSBlocks, true);
+emailFld.addEventListener("blur", addFixedCSSBlocks, true);
+function removeFixedCSSBlocks() {
+  var giftsBottomArea = document.getElementById('bottomArea');
+  giftsBottomArea.style.position = "relative";
+}
+function addFixedCSSBlocks() {
+  var giftsBottomArea = document.getElementById('bottomArea');
+  giftsBottomArea.style.position = "absolute";
+}
+*/
+  </script>
+</html>

@@ -1,0 +1,930 @@
+@import url("normalize.css");
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/tt0140m_.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/tt0141m_.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/tt0142m_.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/tt0143m_.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/tt0144m_.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/tt0145m_.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FuturaStd-Medium';
+    src: url('../fonts/FuturaStd-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+body {
+    font-family: 'Futura', sans-serif;
+    color: #fff;
+    background-color: #f5f5f5
+}
+a {
+    text-decoration: none;
+}
+.content {
+    margin: auto;
+}
+.gift-blocks-outer .content {
+    text-align: center;
+}
+.promo {
+    width: 100%;
+}
+.clearfix {
+    clear: both;
+}
+.billboard {
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    background-position: center bottom;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+.congrats {
+    display: none;
+}
+.billboard h1 span{
+    display: block;
+}
+.billboard p {
+    font-size: 17px;
+}
+.error {
+    display: none;
+}
+.email-component {
+    width: 705px;
+    margin: 85px auto 110px auto;
+    position: relative;
+}
+.email-component input[type="email"] {
+    width: 100%;
+    margin: auto;
+    border: none;
+    font-weight: 700;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.email-component button {
+    position: absolute;
+    margin: auto;
+    border: none;
+    font-weight: 600;
+    box-sizing: border-box;
+    background-color: #1301ff;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    /* Safari */
+    
+    transition: background-color 0.2s;
+}
+.email-component button:hover {
+    background-color: #3425ff;
+}
+.email-component button:active {
+    background-color: #000;
+}
+.gift-blocks-outer {
+    padding-bottom: 90px
+}
+.gift-block {
+    width: 260px;
+    margin: -70px 15px 0 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fff;
+    /*float: left;*/
+    z-index: 999;
+}
+.gift-block .msg-wrapper {
+    text-align: center;
+}
+.gift-block .msg-wrapper h2 {
+    font-weight: 600;
+    color: #515151;
+}
+.gift-block .msg-wrapper h2 strong {
+    color: #000;
+    font-weight: 600
+}
+.gift-block .gift-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.gift-block .mobile-gift-img {
+    max-width: 100%
+}
+.gift-block a:hover > .gift-img-wrapper .overlay {
+    display: block;
+}
+.copyright-top {
+    display: none;
+}
+
+.gift-block .overlay {
+    background-color: rgba(19,1,255,0.5);
+    background-image: url('../img/chk-img.png');
+    background-position: center center;
+    background-size: 32%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -5px;
+    display: none;
+    margin-bottom: 5px
+}
+
+
+@media screen and (max-width: 420px) {
+    .gift-block .msg-wrapper h2 {
+        font-size: 10px !important;
+    }
+    .gift-block .msg-wrapper{
+        padding: 5px
+    }
+
+}
+@media screen and (max-width: 848px) {
+    html,
+    body,
+    .main-wrapper {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+        .logo {
+        width: 120px;
+        margin-top: 30px;
+        margin-bottom: 15px
+    }
+
+
+
+
+
+.congrats {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.congrats h2 {
+    font-size: 30px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.congrats h2 span{
+    display: block;
+    font-size: 20px
+}
+.congrats .redeem-code{
+    display: inline-block;
+    width: auto;
+    background-color: rgba(0,0,0,0.26);
+    box-sizing: border-box;
+    border: dotted 1px rgba(255,255,255,0.2);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px 5px
+}
+.congrats .redeem-button {
+    padding: 14px 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #2a2a2a;
+    font-size: 15px;
+    display: table;
+    margin-top: 20px;
+    font-weight: 600;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.congrats .redeem-button:hover {
+    background-color:#1301ff;
+    color: #fff;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+
+
+    .billboard {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .billboard p {
+        display: none;
+    }
+
+    .billboard h1 {
+        margin: 0;
+        color: #2f2f2f;
+        font-size:28px;
+        padding: 15px;
+        position: absolute;
+        bottom: 90px;
+        font-weight: 600
+    }
+    .billboard h1 span{
+    display: none;
+}
+            .promo {
+    background-image: url("../img/promo-bg.jpg");
+    background-size: cover;
+    background-position: left bottom;
+        -webkit-border-radius: 15px;
+        -webkit-border-bottom-right-radius: 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        -moz-border-radius: 15px;
+        -moz-border-radius-bottomright: 30px;
+        -moz-border-radius-bottomleft: 30px;
+        border-radius: 15px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        min-height: 320px;
+    }
+
+    .email-component {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        bottom: 0px
+    }
+    .email-component input[type="email"] {
+        padding: 20px 115px 15px 15px;
+        height: 60px;
+        font-size: 12px;
+        font-weight: 600;
+        -webkit-border-bottom-right-radius: 30px;
+        -moz-border-radius-bottomright: 30px;
+        border-bottom-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        -webkit-border-bottom-left-radius: 15px;
+        -moz-border-radius-bottomright: 30px;
+        -moz-border-radius-bottomleft: 15px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 15px;
+    }
+    .email-component input[type="email"]:focus > .gift-blocks-outer {
+        display: none !important;
+    }
+    .email-component button {
+        padding: 20px 15px;
+        height: 60px;
+        font-size: 12px;
+        font-weight: 600;
+        right: 0px;
+        top: 0px;
+        -webkit-border-bottom-right-radius: 15px;
+        -moz-border-radius-bottomright: 15px;
+        border-bottom-right-radius: 15px;
+        position: absolute;
+    }
+
+    .gift-block {
+        width: 33.3333%;
+        margin: 0;
+        padding: 0px;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+    }
+    .gift-block {
+        width: 33.3333%;
+        margin: 0;
+        padding: 0px;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+
+    }
+    .gift-blocks-outer {
+        padding-bottom: 0px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px
+    }
+    .gift-blocks-outer .content {
+        padding: 0px;
+          display: -webkit-box; 
+  display: -moz-box;        
+  display: -ms-flexbox;    
+  display: -webkit-flex;     
+  display: flex;             
+  align-items: center;
+    justify-content: center;
+    }
+    .gift-block .msg-wrapper {
+    text-align: left;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    height: 48px;
+    z-index: 999;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    }
+
+    .gift-block .overlay {
+top: 0px;
+    margin-bottom: 0px
+}
+
+
+.gift-blocks-outer .gift-block:not(:last-child) .msg-wrapper {
+    border-right: 1px #c7c7c7 solid
+}
+
+
+    .gift-block .msg-wrapper h2 {
+        font-size: 14px;
+        margin: 0px auto 0px auto
+    }
+    .gift-img-wrapper {
+        height: 70px;
+        overflow: hidden;
+        margin-bottom: 48px;
+    }
+    .gift-img-wrapper img {
+        margin-top: -50%;
+        top: 26px;
+        position: relative;
+    }
+
+    .gift-blocks-outer {
+        position: absolute;
+    }
+    .copyright-outer {
+        display: none;
+    }
+
+.copyright-top {
+    display: block !important;
+    float: right;
+}
+
+    .copyright.copyright-top  {
+        margin-top: 35px;
+    text-align: right;
+    font-size: 10px;
+}
+.copyright.copyright-top ,
+.copyright.copyright-top  a {
+    color: #fff
+}
+.copyright.copyright-top  a {
+    text-decoration: none;
+}
+    .error {
+        display: none;
+        width: 100%;
+        background-color: #e94545;
+        padding: 8px;
+        box-sizing: border-box;
+        position: absolute;
+        font-size: 12px;
+        font-weight: 600;
+        top: -30px;
+        text-align: center;
+        position: absolute;
+    }
+    .error::before {
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin: 0 0 0 30%;
+        bottom: -8px;
+        display: block;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-top: 9px solid #e94545;
+        content: "";
+
+    }
+    .error-active {
+        display: block;
+
+    }
+}
+@media screen and (min-width: 848px) {
+
+.congrats {
+    width: 70%;
+    margin: auto;
+}
+
+.congrats h2 {
+    font-size: 30px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+    margin-bottom: 20px
+}
+.congrats h2 span{
+    display: block;
+    font-size: 20px
+}
+.congrats .redeem-code{
+    display: inline-block;
+    width: auto;
+    background-color: rgba(0,0,0,0.26);
+    box-sizing: border-box;
+    border: dotted 1px rgba(255,255,255,0.2);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5px;
+}
+.congrats .redeem-button {
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #2a2a2a;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.congrats .redeem-button:hover {
+    background-color:#1301ff;
+    color: #fff;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+    .billboard {
+        height: 390px;
+    }
+    .logo {
+        width: 160px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .billboard h1 {
+        font-weight: 400;
+        font-size: 34px;
+    }
+    .billboard p {
+        font-size: 14px;
+    }
+    .content {
+        width: 601px;
+    }
+    .email-component {
+        width: 400px;
+        margin: 25px auto 47px auto;
+    }
+    .email-component input[type="email"] {
+        padding: 8px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .email-component button {
+        padding: 10px;
+        height: 39px;
+        right: 3px;
+        top: 3px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .error {
+        display: none;
+        width: 100%;
+        background-color: #e94545;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-top: 2px;
+        position: absolute;
+        font-size: 14px
+    }
+    .error::before {
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin: 0 0 0 50%;
+        top: -12px;
+        left: -6px;
+        display: block;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid #e94545;
+        content: "";
+    }
+    .error-active {
+        display: block;
+    }
+    .gift-block {
+        width: 177px;
+        margin: -40px 10px 0 10px;
+        padding: 15px;
+        position: relative;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(204, 204, 204, 1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(204, 204, 204, 1);
+        box-shadow: 0px 2px 3px 0px rgba(204, 204, 204, 1);
+    }
+    .gift-blocks-outer {
+        padding-bottom: 20px;
+    }
+    .gift-block .msg-wrapper h2 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0px auto 12px auto;
+    }
+    .copyright-outer {
+        padding-bottom: 0;
+    }
+    .copyright {
+    text-align: center;
+    font-size: 13px;
+}
+.copyright,
+.copyright a {
+    color: #212121
+}
+.copyright a {
+    text-decoration: none;
+}
+.copyright-outer {
+    padding-bottom: 10px
+}
+}
+@media screen and (min-width: 1440px) {
+    .billboard {
+        height: 470px;
+    }
+    .logo {
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+.congrats h2 {
+    font-size: 40px;
+}
+.congrats h2 span{
+    display: block;
+    font-size: 26px
+}
+.congrats .redeem-code{
+    font-size: 50px;
+}
+.congrats .redeem-button {
+    padding: 15px 30px;
+}
+
+
+    .billboard h1 {
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .billboard p {
+        font-size: 16px;
+    }
+    .content {
+        width: 700px;
+    }
+    .email-component {
+        width: 460px;
+        margin: 25px auto 63px auto;
+    }
+    .email-component input[type="email"] {
+        padding: 12px;
+        height: 52px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .email-component button {
+        padding: 10px;
+        height: 44px;
+        right: 4px;
+        top: 4px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .error {
+        padding: 15px;
+        font-size: 16px
+    }
+    .gift-block {
+        width: 210px;
+        margin: -40px 10px 0 10px;
+        padding: 15px;
+    }
+    .gift-blocks-outer {
+        padding-bottom: 40px;
+    }
+    .gift-block .msg-wrapper h2 {
+        font-size: 16px;
+        margin: 0px auto 16px auto;
+    }
+    .copyright-outer {
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .billboard {
+        height: 550px;
+    }
+    .logo {
+        width: 220px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .billboard h1 {
+        font-weight: 600;
+        font-size: 46px;
+    }
+    .billboard p {
+        font-size: 17px;
+    }
+    .content {
+        width: 770px;
+    }
+    .email-component {
+        width: 520px;
+        margin: 50px auto 75px auto;
+    }
+    .email-component input[type="email"] {
+        padding: 18px;
+        height: 60px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .email-component button {
+        padding: 10px;
+        height: 52px;
+        right: 4px;
+        top: 4px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .gift-block {
+        width: 233px;
+        margin: -45px 10px 0 10px;
+        padding: 15px;
+    }
+    .gift-blocks-outer {
+        padding-bottom: 40px;
+    }
+    .gift-block .msg-wrapper h2 {
+        font-size: 17px;
+        margin: 0px auto 16px auto;
+    }
+}
+@media screen and (min-width: 1920px) {
+
+.congrats h2 {
+    font-size: 48px;
+}
+.congrats h2 span{
+    display: block;
+    font-size: 28px
+}
+.congrats .redeem-code{
+    font-size: 60px;
+}
+.congrats .redeem-button {
+    padding: 20px 40px;
+}
+
+    .billboard {
+        height: 570px;
+    }
+    .logo {
+        width: 220px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .billboard h1 {
+        font-weight: 600;
+        font-size: 46px;
+    }
+    .billboard p {
+        font-size: 17px;
+    }
+    .content {
+        width: 880px;
+    }
+    .email-component {
+        width: 520px;
+        margin: 50px auto 72px auto;
+    }
+    .email-component input[type="email"] {
+        padding: 18px;
+        height: 60px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .email-component button {
+        padding: 10px;
+        height: 52px;
+        right: 4px;
+        top: 4px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .gift-block {
+        width: 270px;
+        margin: -50px 10px 0 10px;
+        padding: 15px;
+    }
+    .gift-blocks-outer {
+        padding-bottom: 40px;
+    }
+    .gift-block .msg-wrapper h2 {
+        font-size: 17px;
+        margin: 0px auto 16px auto;
+    }
+}
+
+@media screen and (min-width: 602px) and (max-width: 768px) and (orientation: portrait) {
+    .promo { 
+        min-height: 460px;
+        margin-top: 60px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .gift-block .msg-wrapper h2 {
+    font-size: 18px;
+    margin: 0px auto 0px auto;
+}
+.gift-block .msg-wrapper {
+height: 64px;
+}
+.gift-img-wrapper {
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+.gift-img-wrapper img {
+    top: 43px;
+}
+
+.congrats {
+    margin-top: 100px
+}
+.congrats h2 {
+    font-size: 56px;
+}
+.congrats h2 span{
+    display: block;
+    font-size: 32px
+}
+.congrats .redeem-code{
+    font-size: 62px;
+}
+.congrats .redeem-button {
+    padding: 20px 40px;
+    font-size: 17px
+}
+.email-component input[type="email"] {
+    font-size: 16px
+}
+.email-component button { 
+    font-size: 16px
+}
+}
+
+
+@media screen and (max-width: 601px) and (orientation: portrait) {
+    .promo { 
+        min-height: 420px;
+        margin-top: 50px;
+    } 
+
+}
+
+
+
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    .promo { 
+        min-height: 320px;
+        margin-top: 50px;
+    } 
+}
+
+
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    .promo { 
+        min-height: 280px;
+        margin-top: 30px;
+    } 
+        .congrats .redeem-code {
+        font-size: 18px
+    }
+
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+    .promo { 
+        min-height: 240px;
+        margin-top: 2px;
+    } 
+        .congrats .redeem-code {
+        font-size: 18px
+    }
+}
+@media only screen and (max-width: 736px) and (orientation: landscape) and (min-height: 100px){
+
+    .gift-blocks-outer {
+        position: relative;
+    }
+    .promo { 
+        min-height: 250px;
+        margin-bottom: 50px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .billboard {
+        height:auto;
+    }
+    .congrats h2 {
+    margin-top: 0px;
+    margin-bottom: 5px
+    }
+    .congrats .redeem-button {
+     margin-bottom: 20px  
+    }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) and (min-height: 100px){
+
+    .gift-blocks-outer {
+        position: relative;
+    }
+    .promo { 
+        min-height: 200px;
+        margin-bottom: 50px;
+    }
+    .billboard {
+        height:auto;
+    }
+}
+
+@media screen and (max-width: 568px) and (orientation: landscape) {
+.gift-blocks-outer {
+    position: relative !important;
+}
+.promo { 
+    min-height: 190px;
+    margin-bottom: 50px;
+}
+.billboard {
+    height:auto;
+}
+}
+
